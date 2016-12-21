@@ -1,0 +1,185 @@
+<html>
+
+<!-- Mirrored from www.cs.usfca.edu/~galles/cs414/lecture/lectureS15.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Nov 2016 08:33:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<title> CS414 Lecture Materials </title>
+</head>
+<body>
+
+<div class="container">
+<div class="header"><h1 class = "header">Computer Science 414: Compilers</h1> </div>
+<div class="menu">
+<ul>
+<li> <a href="../cs414S15.html"> Home</a> </li>
+<li> <a href="../cs414syllabusS15.html"> Syllabus</a> </li>
+<li>  Lecture Notes </li>
+<li> <a href="../cs414AssignmentsS15.html"> Assignments </a> </li>
+</ul>
+
+<br> <br>
+<div class="about">
+<a href="http://www.cs.usfca.edu/galles"> David Galles </a> <br>
+<a href="http://www.cs.usfca.edu/"> Computer Science </a> <br>
+<a href="http://www.usfca.edu/"> Univerisity of San Francisco </a>  
+</div>
+
+</div>
+
+<div class="content">
+
+<i>Note:</i> &nbsp;Lecture notes are grouped by topic area, not the
+date they are given. &nbsp;Each lecture topic can span several days of
+actual lecture time.<br>
+
+<br>
+
+Lecture 1 - Overview and Lexical Analysis: <a href="lecture1.java.pdf">slides</a> <a href="lecture1.java.printable.pdf">printable</a>
+
+<ul>
+<li> <a href="code/Token.java.html">Token.java</a>     </li>
+<li> <a href="code/simple.html">simple.jj</a> </li>
+<li> <a href="code/simpleTokenTest.html">simpleTokenTest.java</a> </li>
+<li> <a href="code/simple2.html">simple2.jj</a> </li>
+<li> <a href="code/simple2TokenTest.html">simple2TokenTest.java</a> </li>
+</ul>
+
+Lecture 2: Context Free Grammars  and  EBNF 
+        <a
+        href="lecture2.java.pdf">slides</a> <a
+        href="lecture2.java.printable.pdf">printable </a><br>   
+
+<br>
+
+Lecture 3: Parsing 
+        <a
+        href="lecture3.java.pdf">slides</a> <a
+        href="lecture3.java.printable.pdf">printable </a><br>   
+
+  <ul>
+    <li><a href="code/Parser.java.html">Parser.java</a></li>
+    <li><a href="code/prefix.jj.html">prefix.jj</a></li>
+    <li><a href="code/prefixmain.java.html">prefixmain.java</a></li>
+    <li><a href="code/prefix2.jj.html">prefix2.jj</a></li>
+    <li><a href="code/prefixmain2.java.html">prefixmain2.java</a></li>
+  </ul>
+
+
+<br>
+
+Lecture 4: Abstract Syntax Trees, Visitors, and Actions 
+        <a
+        href="lecture4.java.pdf">slides</a> <a
+        href="lecture4.java.printable.pdf">printable </a><br>   
+<br>
+
+<b> Simple Expression Trees </b>
+
+  <ul>
+    <li><a href="code/AST/ASTExpression.java.html">ASTExpression.java</a></li>
+    <li><a href="code/AST/ASTIntegerLiteral.java.html">ASTIntegerLiteral.java</a></li>
+    <li><a href="code/AST/ASTOperatorExpression.java.html">ASTOperatorExpression.java</a></li>
+  </ul>
+
+<b> Tree Nodes with a variable number of children </b>
+
+  <ul>
+    <li><a href="code/AST/ASTFunctionCallStatement.java.html">ASTFunctionCallStatement.java</a></li>
+  </ul>
+
+<b> Virtual Function Review </b>
+
+  <ul>
+    <li><a href="code/OO/Shape.java.html">Shape.java</a></li>
+    <li><a href="code/OO/Square.java.html">Square.java</a></li>
+    <li><a href="code/OO/Circle.java.html">Circle.java</a></li>
+    <li><a href="code/OO/ShapeDriver.java.html">ShapeDirver.java</a></li>
+  </ul>
+
+
+<b> Visitors </b>
+
+  <ul>
+    <li><a href="code/visitor/ASTExpression.java.html">ASTExpression.java</a></li>
+    <li><a href="code/visitor/ASTIntegerLiteral.java.html">ASTIntegerLiteral.java</a></li>
+    <li><a href="code/visitor/ASTOperatorExpression.java.html">ASTOperatorExpression.java</a></li>
+    <li><a href="code/visitor/ASTVisitor.java.html">ASTVisitor.java</a></li>
+    <li><a href="code/visitor/Calculate.java.html">Calculate.java</a></li>
+    <li><a href="code/visitor/PrintTree.java.html">PrintTree.java</a></li>
+  </ul>
+
+<b> Actions in JavaCC </b>
+
+  <ul>
+    <li><a href="code/parens1.jj.html">parens1.jj</a></li>
+    <li><a href="code/parens2.jj.html">parens2.jj</a></li>
+    <li><a href="code/calc.noact.jj.html">calc.noact.jj</a></li>
+    <li><a href="code/calc.jj.html">calc.jj</a></li>
+  </ul>
+
+
+Lecture 5: LR Parsing
+        <a
+        href="lecture5.java.pdf">slides</a> <a
+        href="lecture5.java.printable.pdf">printable </a><br>   
+
+<br>
+
+Lecture 6: Semantic Analysis
+        <a
+        href="lecture6.java.pdf">slides</a> <a
+        href="lecture6.java.printable.pdf">printable </a><br>   
+
+<br>
+
+Lecture 7: Abstract Assembly 
+        <a
+        href="lecture7.java.pdf">slides</a> <a
+        href="lecture7.java.printable.pdf">printable </a><br>   
+
+Lecture 8: Code Generation
+        <a
+        href="lecture8.java.pdf">slides</a> <a
+        href="lecture8.java.printable.pdf">printable </a><br>   
+
+
+Lecture 9: Object Oriented Extensions
+        <a
+        href="lecture9.java.pdf">slides</a> <a
+        href="lecture9.java.printable.pdf">printable </a><br>   
+
+
+Lecture 10: Optimization
+        <a
+        href="lecture12.java.pdf">slides</a> <a
+        href="lecture12.java.printable.pdf">printable </a><br>   
+
+Final Review:
+        <a
+        href="lectureFR.pdf">slides</a> <a
+        href="lectureFR.printable.pdf">printable </a><br>   
+
+<!-- <br> <br> <br> <br>    <!-- Hack!  To get the separating line to be long enough -->
+</div>
+
+<div class="footer">Univeristy of San Francisco Department of Computer
+  Science </div>
+
+</div>
+
+</div>
+</body>
+
+<!-- Mirrored from www.cs.usfca.edu/~galles/cs414/lecture/lectureS15.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Nov 2016 08:38:41 GMT -->
+</html>
+
+
+
+
+
+</ul>
+</div>
+</div>
+</body>
+</html>

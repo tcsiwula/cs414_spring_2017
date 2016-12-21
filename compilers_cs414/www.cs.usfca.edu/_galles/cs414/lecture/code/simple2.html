@@ -1,0 +1,21 @@
+PARSER_BEGIN(simple2)
+public class simple2 {
+
+}
+PARSER_END(simple2)
+
+SKIP : 
+{
+       < " " >
+|      < "\n" >
+|      < "\t" >
+}
+
+TOKEN :
+{
+       <ELSE: "else">
+|      <SEMICOLON: ";">
+|      <FOR: "for">
+|      <INTEGER_LITERAL: (["0"-"9"])+>
+|      <IDENTIFIER: ["a"-"z"](["a"-"z","0"-"9"])*>
+}
