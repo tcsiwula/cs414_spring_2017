@@ -1,0 +1,14 @@
+PARSER_BEGIN(simple)
+public class simple {
+
+}
+PARSER_END(simple)
+
+TOKEN :
+{
+       <ELSE: "else">
+|      <SEMICOLON: ";">
+|      <FOR: "for">
+|      <INTEGER_LITERAL: (["0"-"9"])+>
+|      <IDENTIFIER: ["a"-"z"](["a"-"z","0"-"9"])*>
+}
