@@ -1,0 +1,98 @@
+javacc
+
+!~/
+javacc simple.jj
+
+tokenizer generates ...:money_with_wings:
+token kind ---- id,
+
+
+
+simpleTokenManager.java --generated file from javacc simple.jj
+
+javac *.java
+
+
+Token : else : "else"
+Token : elsed : <IDENTIFIER>
+Token : t : <SINGLECHAR>
+
+MUST DO FULLY PARENTHESIS AROUND NESTED REGEX
+
+.JJ FILE ----->>>>> ALL JAVA FILES THAT DO EVERYTHING, GET NEXT TOKENS....
+
+c programs for this -- lex, bison/yacc
+
+
+javacc charactersets
+https://javacc.java.net/doc/javaccgrm.html
+
+JAVACC STATES ----- NESTED COMMENTS
+MATCHES longest string that matches, then switches state to the current match
+
+    SKIP_STATE :
+    {
+        <"*/" > : DEFAULT_STATE
+    |   <~[] >
+    }
+
+
+TOKENMANAGER
+Java.io.InutStream
+SimpleCharStream
+
+
+
+
+
+
+
+
+
+
+
+TO DO
+1. INSTALL JAVACC
+2. RUN JAVACC SIMPLE.JJ
+3. LOOK AT GENERATED FILES
+4. START PROJECT 1 (LEXER) THIS WEEKEND
+5. look at simpleJava Examples -------   http://www.cs.usfca.edu/~galles/compilerdesign/simplejava/sjavaex.html
+
+
+
+
+mini max - connect4ip   --------
+
+
+interperter assembly   ------
+
+
+machiene code .assm run by interperter run by asa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
