@@ -1,0 +1,36 @@
+
+PARSER_BEGIN(prefix2)
+
+public class prefix2 {
+}
+
+
+PARSER_END(prefix2)
+SKIP :
+{
+        " "
+|       "\n"
+}
+
+TOKEN :
+{
+        < PLUS: "+">
+|       < MINUS: "-">
+|       < TIMES: "*">
+|       < DIVIDE: "/">
+|       < INTEGER_LITERAL: (["0"-"9"])+ >
+}
+
+void program():
+{}
+{    expression() <EOF>
+}
+
+void expression():
+{}
+{
+       (<PLUS> | <MINUS> | <TIMES> | <DIVIDE>) expression() expression()
+|       <INTEGER_LITERAL>
+}
+
+

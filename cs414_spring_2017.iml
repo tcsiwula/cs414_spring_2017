@@ -4,7 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/code_examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/notes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lectures" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
